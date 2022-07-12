@@ -17,18 +17,25 @@ h6 {
   line-height: 1.1;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
 header {
     width: 96%;
     margin: 0 auto;
     text-align: center;
-    color: rgb(226, 169, 56);
+    color: peachpuff;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header h1.page-title {
-  padding: 1rem 1.2rem
+  padding: 1rem 1.1rem
 }
 
+main {
+  margin: 2rem;
+}
 /* Literally just copy-pasted to understand how this works */
 .row {
     display: flex;
@@ -42,6 +49,7 @@ header h1.page-title {
     justify-content: center;
   }
 
+  /* This is the whole card section. Each card is within a div with the class "card-column." They are layed out in column formatting.*/
   .card-column {
     flex: 1 0 100%;
     padding: 1.5rem;
@@ -50,6 +58,7 @@ header h1.page-title {
     margin-bottom: 1.5rem;
   }
 
+  /* Within each div is a section with the class "code-card." */
   .code-card {
     display: flex;
     flex-direction: column;
@@ -58,10 +67,21 @@ header h1.page-title {
     padding: 2rem;
     color: grey;
     background-color: black;
+    align-items: center;
   
 }
 
+h2.card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  background-color: peachpuff;
+  margin: -2.9rem 0 .2rem 0;
+  max-width: 300px;
+  padding: .5rem 1rem; 
 
+}
 
 /* for tablets */
 @media screen and (min-width: 768px) {
@@ -73,6 +93,10 @@ header h1.page-title {
   .card-column:last-child {
     flex-grow: 1;
   }
+}
+
+.card-body {
+  margin: .1rem auto 3rem;
 }
 
 /* for full screen */
