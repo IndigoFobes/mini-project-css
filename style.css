@@ -1,0 +1,56 @@
+header {
+    text-align: center;
+    color: rgb(226, 169, 56);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.code-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: grey;
+    background-color: black;
+}
+
+/* Literally just copy-pasted to understand how this works */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
+  .card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+/* .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 
+    repeat(12, 1fr);
+}
+*/
+
